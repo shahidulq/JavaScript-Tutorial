@@ -3,54 +3,54 @@
 // javascript
 console.log("Hello World")
 var myArray = [[1,2,3], [4,5,6], [1,2,3], [[7,8,9], 2,3]]
-console.log(myArray)
+console.log(myArray)					//will return the whole array
 var myData = myArray[3][0][1]
-console.log(myData)
+console.log(myData)						//will return 8
 
 //push to add item to list
 var ourArray = ["Stimson", "J", "cat"]
 ourArray.push(["happy", "joy"])         // different
-console.log(ourArray)
+console.log(ourArray)					//will return [ 'Stimson', 'J', 'cat', [ 'happy', 'joy' ] ]
 
 var ourArray2 = [["John", 23], ["cat", 2]]
 ourArray2.push(["dog", 3])
-console.log(ourArray2)
+console.log(ourArray2)					//will return [ [ 'John', 23 ], [ 'cat', 2 ], [ 'dog', 3 ] ]
 
 //pop to remove last item
 var ourArray3 = [1,2,3]
 var removeFromOurArray3 = ourArray3.pop()
-console.log(removeFromOurArray3)
-console.log(ourArray3)
+console.log(removeFromOurArray3)		//will return 3
+console.log(ourArray3)					//will return [ 1, 2 ]
 
 //shift to remove first item
 var ourArray3 = [1,2,3]
 var removeFromOurArray3 = ourArray3.shift()
-console.log(removeFromOurArray3)
-console.log(ourArray3)
+console.log(removeFromOurArray3)		//will return 1
+console.log(ourArray3)					//will return [ 2, 3 ]
 
 //unshift to add as first item
 var ourArray3 = [1,2,3]
 ourArray3.unshift("Happy")
-console.log(ourArray3)
+console.log(ourArray3)					//will return [ 'Happy', 1, 2, 3 ]
 
 //list within a list -- shoppin list
 var myList = [["Mango", 5],["Potato", 4],["Egg", 12],]
-console.log(myList)
+console.log(myList)						//will return the whole list
 
 //parameters 	are variable that act as placeholder for the values that are input to functions when called
 
 function addTwoNumbers (a, b) {
 console.log(a + b)
 }
-addTwoNumbers(10, 5)
+addTwoNumbers(10, 5)					//will return 15
 
 function addTwoNumbersv2 (a, b) {
 var c = 10			//scope of this variable is local
-var d = 20			//i can not delare variable without var keyword like the video
+var d = 20			//I cannot declare variable without var keyword like the video
 var result = a + b + c + d
 return result
 }
-console.log(addTwoNumbersv2(2, 5))
+console.log(addTwoNumbersv2(2, 5))		//will return 37
 
 
 function wordBanks(myNoun, myAdjective, myVerb, myAdverb) {
@@ -149,7 +149,7 @@ var testArray = [1,2,3,4,5]
 
 console.log("Before: " + JSON.stringify(testArray))		//will return	Before: 1,2,3,4,5
 console.log(nextInLine(testArray, 6))	    			//will return	1
-console.log("After: " + JSON.stringify(testArray)) 		//will return	Before: 2,3,4,5,6
+console.log("After: " + JSON.stringify(testArray)) 		//will return	After: 2,3,4,5,6
 
 //Boolean & if statement
 function trueOrFalse(wasThatTrue) {
